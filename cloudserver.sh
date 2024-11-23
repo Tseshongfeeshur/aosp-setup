@@ -6,12 +6,12 @@
 
 # setup git
 # only used to pull android pull source
-your_git_username="example"
-your_git_email="example@example.com"
+your_git_username="Tseshongfeeshur"
+your_git_email="ryanyuanzhehan@gmail.com"
 git_android_manifest="https://github.com/RisingTechOSS/android"
-git_android_branch="thirteen"
+git_android_branch="fifteen"
 # only if you want to use wxpusher
-wxpusher_uid=""
+wxpusher_uid="UID_91cqpna1KvCUaNVbiC5ynTIHUNit"
 
 
 cloud_script(){
@@ -34,7 +34,7 @@ cloud_script(){
 
   # now sync source & build
   cd /home/${USER}/aosp-setup
-  ./aosp.sh -k ${git_android_manifest} ${git_android_branch} --auto_build --wxpusher_uid ${wxpusher_uid}
+  ./aosp.sh -k ${git_android_manifest} ${git_android_branch} --auto_build --wxpusher_uid ${wxpusher_uid} --upload git@gitlab.com:tseshongfeeshur/MyRom.git
 }
 
 cloud_script
