@@ -28,7 +28,7 @@ cloud_script(){
   git config --global user.email example@example.com
 
   # check aosp-setup
-  if [[ ! -d /home/${USER}/aosp-setup ]];then git clone https://github.com/stuartore/aosp-setup.git /home/${USER}/aosp-setup;fi
+  if [[ ! -d /home/${USER}/aosp-setup ]];then git clone https://github.com/Tseshongfeeshur/aosp-setup.git /home/${USER}/aosp-setup;fi
   sudo chown -R ${USER}:${USER} /home/${USER}/aosp-setup
   sudo chmod -R 777 /home/${USER}/aosp-setup
 
