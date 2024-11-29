@@ -1375,7 +1375,7 @@ auto_build(){
   		if [[ $(grep 'revision="android-14' .repo/manifests/default.xml) ]];then
 			case $rom_spec_str in
 				"rising")
-					build_rom_cmd="riseup ${build_device} userdebug && rise fb"
+					build_rom_cmd="riseup ${build_device} userdebug && rise b"
 					;;
 				"afterlife")
 					build_rom_cmd="goafterlife ${build_device}"
