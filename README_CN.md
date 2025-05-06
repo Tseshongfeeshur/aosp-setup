@@ -1,7 +1,7 @@
 # AOSP setup
 快速开始AOSP编译
 ```
-git clone https://github.com/stuartore/aosp-setup.git && aosp-setup
+git clone https://github.com/Tseshongfeeshur/aosp-setup.git && aosp-setup
 ./aosp.sh
 ```
 > 配置环境并拉取源码

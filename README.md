@@ -2,7 +2,7 @@
 [中文](./README_CN.md)  
 Quick start my aosp sync up
 ```
-git clone https://github.com/stuartore/aosp-setup.git && cd aosp-setup
+git clone https://github.com/Tseshongfeeshur/aosp-setup.git && cd aosp-setup
 ./aosp.sh
 ```
 
