@@ -1371,7 +1371,7 @@ auto_build(){
 			case $rom_spec_for_build in
 				"rising")
 					build_rom_cmd="riseup ${build_device} userdebug"
-     					build_rom_cmd1="rise fb"
+     					build_rom_cmd1="rise b"
 					;;
 				"afterlife")
 					build_rom_cmd="goafterlife ${build_device}"
