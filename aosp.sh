@@ -505,26 +505,7 @@ git_aosp_repo_mirror_reset(){
 
 mirror_unit_main(){
 	# for aosp | git mirrors
-	if [[ $keep_mirror_arg -eq 0 ]];then
-		echo -e "${use_mirror_str}"
-		select use_mirror_sel in "Yes" "No"
-		do
-			case $use_mirror_sel in
-				"Yes")
-					sel_mirror_list=$(echo $sel_mirror_list_str | sort)
-					eval "select_mirror ${sel_mirror_list[@]}"
-					export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo'
-					;;
-				"No" | *)
-					git_aosp_repo_mirror_reset "github" "aosp"
-					echo -e "\033[1;36m=>\033[0m ${skip_mirror_str}"
-					;;
-			esac
-			break
-		done
-	else
 		echo -e "\033[1;32m=>\033[0m ${keep_mirror_str}"
-	fi
 }
 
 ######################### DEPS UNIT #########################
@@ -1612,7 +1593,7 @@ while (( "$#" )); do
 			fi
 			;;
 		-k | -km | --keep-mirror)
-			keep_mirror_arg=0
+			keep_mirror_arg=1
 			;;
 		--recheck)
 			aosp_setup_check 0
