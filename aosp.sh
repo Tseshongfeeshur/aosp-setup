@@ -1612,7 +1612,7 @@ while (( "$#" )); do
 			fi
 			;;
 		-k | -km | --keep-mirror)
-			keep_mirror_arg=1
+			keep_mirror_arg=0
 			;;
 		--recheck)
 			aosp_setup_check 0
